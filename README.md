@@ -21,6 +21,10 @@ TODO: walk through the main features and provide examples.
 ...
 
 
+# JSON Encoding/Decoding
+
+
+
 # Documentation
 
 More complete [documentation can be found on GoDoc.org](https://godoc.org/github.com/bradleypeabody/binenc).
