@@ -1,4 +1,4 @@
-# binenc: Binary Encoding Library
+# binenc: Binary Encoding Library... NVM - found http://kaitai.io/ and instead of pursing this project will try to use Kaitai when it supports Go.
 Easily implement binary encodings and JSON representation in Go using struct tags and marshaling.
 
 # But Why
@@ -12,7 +12,7 @@ Thus binenc aims to provide the following:
 
 # Usage
 
-TODO: walk through the main features and provide examples.
+TODO: walk through the main features and provide examples - or possibly just one or two examples that each demonstrate mutliple features.
 
 ## Endianness
 

@@ -54,6 +54,8 @@ type FieldConfig struct {
 	Name string // name of the field, matching the Go struct
 	// TODO: need to add the kind - probably as reflect.Kind and it needs to correspond to uint16 or whatever
 
+	// Type reflect.Type
+
 	// Ignore    bool             // if true then field is skipped during all processing
 	ByteOrder binary.ByteOrder // whenever endianness is needed, use this or default to DEFAULT_BYTE_ORDER
 	Const     []byte           // if non-nil indicates a constant byte sequence
@@ -89,6 +91,8 @@ func NewTypeConfig(origvt reflect.Type) *TypeConfig {
 		f := vt.Field(i)
 		fc := &FieldConfig{}
 		fc.Name = f.Name
+
+		// fc.Type = f.Type
 
 		tagVals := ParseTag(f.Tag.Get("binenc"))
 
